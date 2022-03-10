@@ -1,0 +1,36 @@
+.type {
+    border: 1px solid black;
+    
+}
+
+.services, .footer {
+    column-count: 2;
+}
+
+.hours {
+    padding-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#book {
+    padding: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bolder;
+}
+
+#appointments {
+    padding: 23px;
+    font-weight: bolder;
+    background-color: white;
+}
+
+.services {
+    background-color: lightgrey;
+    padding: 20px;
+}
