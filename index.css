@@ -10,11 +10,10 @@
 .buttons {
     display: inline-flex;
     flex-direction: column;
-    -ms-flex-align: end;
 }
 
-#bookBtn { /*trying to get buttons on left side of page*/
-    padding: 20px;
+#bookBtn { /*trying to get buttons on left side of page and make longer*/
+    padding: 10px;
     background-color: cornflowerblue;
     color: white;
     font-weight: bolder;
@@ -22,17 +21,17 @@
 
 }
 
-#appBtn {  /*trying to get buttons on left side of page*/
-    padding: 23px;
+#appBtn {  /*trying to get buttons on left side of page and make longer*/
+    padding: 13px;
     background-color: white;
     font-weight: bolder;
     align-content: flex-end; 
 }
 
-.services { /*cant figure out how to get padding around boxes*/
-    background-color: lightgrey;
+.services { /*cant figure out how to get padding below boxes*/
+    background-color: rgb(231, 231, 231);
     padding: 20px;
-    column-count: 2;
+    /* column-count: 2; */
     /* gap: 20px; */
     
 }
@@ -54,7 +53,7 @@
     text-align: left;
 }
 
-.about { /*only way I could think of getting buttons apart*/
+.about { /*only way I could think of getting buttons apart */
     padding-right: 50px;
 }
 
@@ -62,15 +61,27 @@
     text-align: center;
 }
 
-.map, .address, .hours {
-    display: inline-block;
-    padding-top: 30px;
-}
-
-.address, .hours { /* align items to the left*/
-    align-content: right;
-}
-
 .map {
-    padding-right: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.hours, .address { /*cant get to center*/
+    display: inline-block;
+}
+
+.plant {
+    color: green;
+}
+
+.facestar {
+    color: red;
+}
+
+.star {
+    color: rgba(255, 255, 0, 0.76);
+}
+
+.pay {
+    text-align: right;
 }
