@@ -1,24 +1,23 @@
-// function myBtn() {
-//     let el = document.getElementById("bookBtn").onclick;
-//     location.href = "www.facebook.com/lashesbyserenagene";
-//   }
-
-//   myBtn();
 
 
 
 
-//   document.getElementById("bookBtn").onclick = function () {
-//     location.href = "www.facebook.com/lashesbyserenagene";
-
-var button = document.querySelector('bookBtn');
-    button.onclick = function() {
-    window.location='https://www.facebook.com/lashesbyserenagene/';
-}
-
-var button = document.querySelector('appBtn');
-    button.onclick = function() {
-    window.location='https://www.facebook.com/lashesbyserenagene/';
+function handleJSRouting(event) {
+    window.location.href = "https://www.facebook.com/lashesbyserenagene/";
+    console.log("Button clicked");
 }
 
 
+
+function readyDOM() {
+    let el = document.querySelector("#bookBtnJS");
+    el.addEventListener('click', handleJSRouting);
+    console.log(el);
+}
+
+readyDOM();
+
+
+
+// let activateBtn = document.querySelector('#activate-btn')
+//   activateBtn.addEventListener('click', activateNodes);
